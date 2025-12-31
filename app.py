@@ -65,7 +65,7 @@ if uploaded_file is not None:
         st.session_state.faiss_index = index
         st.session_state.file_hash = current_hash
 
-        st.success("📚 Document indexed successfully!")
+        st.success("Document indexed successfully!")
     else:
         chunks = st.session_state.chunks
         index = st.session_state.faiss_index
